@@ -1,1 +1,1 @@
-<!-- git push vanilla ver.1" -->
+git push vanilla ver.1
