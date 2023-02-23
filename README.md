@@ -1,1 +1,1 @@
-"comment": "git push outLine, vanilla"
+<!-- git push vanilla ver.1" -->
