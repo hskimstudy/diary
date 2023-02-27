@@ -70,7 +70,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <OptimizeTest />
       <DiaryEditor onCreate={onCreate} />
       <br />
       <div>전체 일기 : {data.length}</div>
