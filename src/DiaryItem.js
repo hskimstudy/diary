@@ -1,8 +1,7 @@
-import { memo, useEffect, useRef, useState } from "react";
+import { memo, useContext, useEffect, useRef, useState } from "react";
+import { DiaryDispatchContext } from './App';
 
 const DiaryItem = ({
-  onRemove,
-  onEdit,
   id,
   author,
   content,
@@ -10,10 +9,7 @@ const DiaryItem = ({
   created_date
 }) => {
 
-  useEffect(() => {
-    console.log(`${id}번째 아이템 렌더!`)
-  });
-
+  const { onRemove, onEdit } = useContext(DiaryDispatchContext);
 
   const localContentInput = useRef();
   const [localContent, setLocalContent] = useState(content);
